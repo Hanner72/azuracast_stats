@@ -4,7 +4,7 @@ Dieses Projekt ist von mir entstanden, da ich selber Statistiken von AzuraCast b
 
 ## Inhaltsverzeichnis
 
-[Monatsstatistik](#monatsstatistik)
+[Monatsstatistik der zeitgleicher Hörer](#monatsstatistik-der-zeitgleichen-höhrer)
 
 ## Features
 
@@ -18,7 +18,5 @@ Dieses Projekt ist von mir entstanden, da ich selber Statistiken von AzuraCast b
 
 <img src=https://user-images.githubusercontent.com/25680545/68164264-b299aa80-ff5c-11e9-9201-ac8fcf91a10c.JPG width="300px">
 
-<a name="monatsstatistik"/>
-
-#### Monatsstatistik
+#### Monatsstatistik der zeitgleichen Höhrer
 ##### der zeitgleichen Höhrer - `stats_monat_15min.php`
