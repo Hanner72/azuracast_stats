@@ -24,8 +24,8 @@ if ($sperrzeit == true) {
 
 #### hier kommt der Datenbankwert für die Listeners rein
 $letztemysqlaktualisierung = 0; 
-#### hier kommt der Datenbankwert für die Zwischensumme rein
-$zwischensumme = 0;
+#### Zwischensumme lesen
+$zwischensumme = file_get_contents("zwischensumme.txt");
 
 #### aktuelle Listeners
 $str = file_get_contents('http://207.180.205.39/api/nowplaying/blechradio1/');
@@ -39,8 +39,15 @@ if ($listeners_current > $letztemysqlaktualisierung) {
 }
 
 $aktuellemysqlsumme = $summe;
+
+
 $letztemysqlaktualisierung = $momentanehoerer;
-$zwischensumme = $summe;
+
+#### Zwischensumme schreiben
+file_put_contents("zwischensumme.txt", $summe); //Abspeichern des Wertes
+
+
+
 
 echo $timestampSTART;
 echo "<br>";
