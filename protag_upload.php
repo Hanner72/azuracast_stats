@@ -1,6 +1,6 @@
 <?php
 
-include ("inc/config.inc.php");
+#include ("inc/config.inc.php");
 
 ### Zeit festlegen
 $aktuelleZeit = time();
@@ -11,4 +11,5 @@ if ($sperrzeit == true) {
       echo "Ich werde nur zwischen 6 und 9 Uhr angezeigt!";
 }
 
+echo mktime(date("H"), date("i"), date("s"));
 ?>
