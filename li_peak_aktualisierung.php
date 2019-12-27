@@ -2,6 +2,27 @@
 
 include ("inc/config.inc.php");
 
+### zwischen dieser Zeit $zwischensumme auf 0 setzen
+$starthour = 0;
+$startminute = 0;
+$startsecond = 30;
+
+$stophour = 0;
+$stopminute = 1;
+$stopsecond = 30;
+
+$aktuelleZeit = time();
+$timestampSTART = mktime( $starthour, $startminute, $startsecond, date("m"), date("d"), date("Y"));
+$timestampENDE = mktime( $stophour, $stopminute, $stopsecond, date("m"), date("d"), date("Y"));
+$sperrzeit = (($aktuelleZeit >= $timestampSTART) && ($aktuelleZeit < $timestampENDE));
+
+$datum = date('d.m.Y');
+if ($sperrzeit == true) {
+      $summe = 0;
+      file_put_contents("data/zwischensumme.txt", $summe); //Abspeichern des Wertes
+}
+
+
 #### aktuelle Listeners
 $str = file_get_contents('http://207.180.205.39/api/nowplaying/blechradio1/');
 $listeners_current = json_decode($str, true);
@@ -31,8 +52,8 @@ file_put_contents("data/zwischensumme.txt", $summe); //Abspeichern des Wertes
 
 
 #### AUSGABE TESTEN
-echo "momentanehoerer (letzte.txt): " . $momentanehoerer . "<br>";
-echo "zwischensumme (zwischensumme.txt): " . $zwischensumme . "<br>";
-echo "summe: " . $summe . "<br>";
+#echo "momentanehoerer (letzte.txt): " . $momentanehoerer . "<br>";
+#echo "zwischensumme (zwischensumme.txt): " . $zwischensumme . "<br>";
+#echo "summe: " . $summe . "<br>";
 
 ?>

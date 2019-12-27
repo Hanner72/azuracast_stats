@@ -119,9 +119,11 @@
                     <div class="col-sm">
                         <h5>Gesamt:</h5><br>
                             <?php
-                            $str = file_get_contents('http://207.180.205.39/api/nowplaying/blechradio1/');
-                            $listeners_total = json_decode($str, true);
-                            echo $listeners_total['listeners']['total'];
+                            $zwischensumme = file_get_contents("data/zwischensumme.txt");
+                            // $str = file_get_contents('http://207.180.205.39/api/nowplaying/blechradio1/');
+                            // $listeners_total = json_decode($str, true);
+                            // echo $listeners_total['listeners']['total'];
+                            echo $zwischensumme;
                             ?>
                     </div>
                     <div class="col-sm">
