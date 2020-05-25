@@ -3,12 +3,12 @@
 include ("inc/config.inc.php");
 
 ### zwischen dieser Zeit $zwischensumme auf 0 setzen
-$starthour = 0;
-$startminute = 0;
+$starthour = 23;
+$startminute = 55;
 $startsecond = 30;
 
-$stophour = 0;
-$stopminute = 1;
+$stophour = 23;
+$stopminute = 56;
 $stopsecond = 30;
 
 $aktuelleZeit = time();
