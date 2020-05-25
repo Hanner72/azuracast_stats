@@ -21,5 +21,10 @@ Dieses Projekt ist von mir entstanden, da ich selber Statistiken von AzuraCast b
 #### Monatsstatistikn
 ##### der zeitgleichen Höhrer - `stats_monat_15min.php`
 
+<<<<<<< HEAD
 #### Tagesstatistiken
 ##### Statistik der gesamten Zuhörer pro Tag
+=======
+#### Test
+##### Das ist nur ein Test
+>>>>>>> 40f9ce409ae88c4589706975290500fff142cc31
