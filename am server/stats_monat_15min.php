@@ -20,7 +20,8 @@ function drawChart() {
 ['Datum', 'Höhrer'],
 <?php 
 
-$query = "SELECT * FROM listeners WHERE date BETWEEN DATE_SUB(NOW(), INTERVAL 30 DAY) AND NOW();"; // die letzten 30 Tage
+$query = "SELECT * FROM listeners WHERE date 
+BETWEEN DATE_SUB(NOW(), INTERVAL 30 DAY) AND NOW();"; // die letzten 30 Tage
 
  $exec = mysqli_query($con,$query);
  while($row = mysqli_fetch_array($exec)){

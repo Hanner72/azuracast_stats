@@ -27,14 +27,14 @@
 
             <div class="media mx-auto bg-light p-3 rounded">
                 <img src="<?php
-                    $str = file_get_contents('https://streamt.at/api/nowplaying/blechradio1/');
+                    $str = file_get_contents('http://207.180.205.39/api/nowplaying/blechradio1/');
                     $song_album_pic= json_decode($str, true);
                     echo $song_album_pic['now_playing']['song']['art'];
                     ?>" class="align-self-center mr-3 rounded-lg" alt="..." width=200px>
                 <div class="media-body mx-auto">
                     <h5 class="mt-0"> 
                         <?php
-                            $str = file_get_contents('https://streamt.at/api/nowplaying/blechradio1/');
+                            $str = file_get_contents('http://207.180.205.39/api/nowplaying/blechradio1/');
                             $song = json_decode($str, true);
                             echo $song['now_playing']['song']['title'];
                         ?><br><br>
@@ -42,7 +42,7 @@
                     <p>
                         von: 
                         <?php
-                            $str = file_get_contents('https://streamt.at/api/nowplaying/blechradio1/');
+                            $str = file_get_contents('http://207.180.205.39/api/nowplaying/blechradio1/');
                             $song = json_decode($str, true);
                             echo $song['now_playing']['song']['artist'];
                         ?>
@@ -50,7 +50,7 @@
                     <p>
                         im Album: 
                         <?php
-                            $str = file_get_contents('https://streamt.at/api/nowplaying/blechradio1/');
+                            $str = file_get_contents('http://207.180.205.39/api/nowplaying/blechradio1/');
                             $song = json_decode($str, true);
                             echo $song['now_playing']['song']['album'];
                         ?>
@@ -68,14 +68,14 @@
 
             <div class="media mx-auto bg-light p-3 rounded">
                 <img src="<?php
-                    $str = file_get_contents('https://streamt.at/api/nowplaying/blechradio1/');
+                    $str = file_get_contents('http://207.180.205.39/api/nowplaying/blechradio1/');
                     $song_album_pic= json_decode($str, true);
                     echo $song_album_pic['playing_next']['song']['art'];
                     ?>" class="align-self-center mr-3 rounded-lg" alt="..." width=200px>
                 <div class="media-body mx-auto">
                     <h5 class="mt-0"> 
                         <?php
-                            $str = file_get_contents('https://streamt.at/api/nowplaying/blechradio1/');
+                            $str = file_get_contents('http://207.180.205.39/api/nowplaying/blechradio1/');
                             $song = json_decode($str, true);
                             echo $song['playing_next']['song']['title'];
                         ?><br><br>
@@ -83,7 +83,7 @@
                     <p>
                         von: 
                         <?php
-                            $str = file_get_contents('https://streamt.at/api/nowplaying/blechradio1/');
+                            $str = file_get_contents('http://207.180.205.39/api/nowplaying/blechradio1/');
                             $song = json_decode($str, true);
                             echo $song['playing_next']['song']['artist'];
                         ?>
@@ -91,7 +91,7 @@
                     <p>
                         im Album: 
                         <?php
-                            $str = file_get_contents('https://streamt.at/api/nowplaying/blechradio1/');
+                            $str = file_get_contents('http://207.180.205.39/api/nowplaying/blechradio1/');
                             $song = json_decode($str, true);
                             echo $song['playing_next']['song']['album'];
                         ?>
@@ -111,7 +111,7 @@
                     <div class="col-sm">
                         <h5>Aktuell:</h5><br>
                             <?php
-                            $str = file_get_contents('https://streamt.at/api/nowplaying/blechradio1/');
+                            $str = file_get_contents('http://207.180.205.39/api/nowplaying/blechradio1/');
                             $listeners_current = json_decode($str, true);
                             echo $listeners_current['listeners']['current'];
                             ?>
@@ -129,7 +129,7 @@
                     <div class="col-sm">
                         <h5>Eindeutig:</h5><br>
                             <?php
-                            $str = file_get_contents('https://streamt.at/api/nowplaying/blechradio1/');
+                            $str = file_get_contents('http://207.180.205.39/api/nowplaying/blechradio1/');
                             $listeners_unique= json_decode($str, true);
                             echo $listeners_unique['listeners']['unique'];
                             ?>

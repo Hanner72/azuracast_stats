@@ -2,7 +2,7 @@
 
 $apikey = 123;
 
-$str = file_get_contents('https://streamt.at/api/nowplaying/blechradio1/');
+$str = file_get_contents('http://207.180.205.39/api/nowplaying/blechradio1/');
 $aktueller_titel= json_decode($str, true);
 $titel = $aktueller_titel['now_playing']['song']['title'];
 $artist = $aktueller_titel['now_playing']['song']['artist'];

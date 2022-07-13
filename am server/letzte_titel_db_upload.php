@@ -2,7 +2,7 @@
 
 include ("inc/config.inc.php");
 
-$str = file_get_contents('https://streamt.at/api/nowplaying/blechradio1/');
+$str = file_get_contents('http://207.180.205.39/api/nowplaying/blechradio1/');
 $letzter_titel= json_decode($str, true);
 $$aktueller_titel_utf = $letzter_titel['now_playing']['song']['text'];
 $istIntro = $letzter_titel['now_playing']['song']['titel'];

@@ -24,7 +24,7 @@ if ($sperrzeit == true) {
 
 
 #### aktuelle Listeners
-$str = file_get_contents('https://streamt.at/api/nowplaying/blechradio1/');
+$str = file_get_contents('http://207.180.205.39/api/nowplaying/blechradio1/');
 $listeners_current = json_decode($str, true);
 #echo $listeners_current['listeners']['current'];
 $listeners_current_str = $listeners_current['listeners']['current'];
